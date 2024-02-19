@@ -8,53 +8,62 @@
     <style>
         body{
             background-color: lightslategray;
-            
         }
         form{
             background-color: white;
             font-family: 'Oswald';
-            padding: 16px;
+            padding: 15px;
             border-radius: 10px;
+            width: 25%;
+        }
+        .InputField{
+            width: 95%;
+        }
+        button{
+            width: 25%;
         }
     </style>
 </head>
 <body>
-    <form action="/submit_form" method="post">
-        <h1>Registration Form</h1>
-        <label for="firstName"><b>First Name:</b></label><br />
-        <input type="text" id="firstName" name="firstName"><br>
 
-        <label for="lastName"><b>Last Name:</b></label><br />
-        <input type="text" id="lastName" name="lastName"><br>
+    <div align="center">
+        <form align="left" action="/submit_form" method="post">
+            <h1>Registration Form</h1>
+            <label for="firstName"><b>First Name:</b></label><br />
+            <input  type="text" class="InputField" name="firstName"><br>
 
-        <label for="nickName"><b>Nick Name:</b></label><br />
-        <input type="text" id="nickName" name="nickName"><br>
+            <label for="lastName"><b>Last Name:</b></label><br />
+            <input type="text" class="InputField" name="lastName"><br>
 
-        <label for="email"><b>Email:</b></label><br />
-        <input type="email" id="email" name="email"><br>
+            <label for="nickName"><b>Nick Name:</b></label><br />
+            <input type="text" class="InputField" name="nickName"><br>
 
-        <b>Password:</b><br />
-        <input type="password" id="password" name="password"><br>
+            <label for="email"><b>Email:</b></label><br />
+            <input type="email" class="InputField" name="email"><br>
 
-        <b>Date of Birth:</b><br />
-        <input type="date" id="dob" name="dob"><br>
+            <b>Password:</b><br />
+            <input type="password" class="InputField" name="password"><br>
 
-        <b>Gender:</b><br />
-        <input type="radio" name="gender" value="male" id="male">
-        <label for="male"><b>Male</b></label>
-        <input type="radio" name="gender" value="female" id="female">
-        <label for="female"><b>Female</b></label>
-        <input type="radio" name="gender" value="other" id="other">
-        <label for="other"><b>Other</b></label><br>
+            <b>Date of Birth:</b><br />
+            <input type="date" class="InputField" name="dob"><br>
 
-        <b>Mobile:</b><br />
-        <input type="tel" id="mobile" name="mobile" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-        <small></small><br>
+            <b>Gender:</b><br />
+            <input type="radio" name="gender" value="male" id="male">
+            <label for="male"><b>Male</b></label>
+            <input type="radio" name="gender" value="female" id="female">
+            <label for="female"><b>Female</b></label>
+            <input type="radio" name="gender" value="other" id="other">
+            <label for="other"><b>Other</b></label><br>
 
-        <b>Address:</b><br />
-        <textarea id="address" name="address" rows="4" cols="50"></textarea><br>
-        <button style="color: white; background-color: green;" type="submit">Submit</button>
-        <button style="color: white; background-color: red;" type="reset">Reset</button>
-    </form>
+            <b>Mobile:</b><br />
+            <input type="tel" class="InputField" name="mobile" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            <small></small><br>
+
+            <b>Address:</b><br />
+            <textarea class="InputField" id="address" name="address" rows="4" cols="50"></textarea><br>
+            <button style="color: white; background-color: green;" type="submit">Submit</button>
+            <button style="color: white; background-color: red;" type="reset">Reset</button>
+        </form>
+    </div>
 </body>
 </html>
