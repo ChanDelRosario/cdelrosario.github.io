@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <style>
+        body{
+            background-color: lightslategray;
+            
+        }
+        form{
+            background-color: white;
+            font-family: 'Oswald';
+            padding: 16px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="/submit_form" method="post">
+        <h1>Registration Form</h1>
+        <label for="firstName"><b>First Name:</b></label><br />
+        <input type="text" id="firstName" name="firstName"><br>
+
+        <label for="lastName"><b>Last Name:</b></label><br />
+        <input type="text" id="lastName" name="lastName"><br>
+
+        <label for="nickName"><b>Nick Name:</b></label><br />
+        <input type="text" id="nickName" name="nickName"><br>
+
+        <label for="email"><b>Email:</b></label><br />
+        <input type="email" id="email" name="email"><br>
+
+        <b>Password:</b><br />
+        <input type="password" id="password" name="password"><br>
+
+        <b>Date of Birth:</b><br />
+        <input type="date" id="dob" name="dob"><br>
+
+        <b>Gender:</b><br />
+        <input type="radio" name="gender" value="male" id="male">
+        <label for="male"><b>Male</b></label>
+        <input type="radio" name="gender" value="female" id="female">
+        <label for="female"><b>Female</b></label>
+        <input type="radio" name="gender" value="other" id="other">
+        <label for="other"><b>Other</b></label><br>
+
+        <b>Mobile:</b><br />
+        <input type="tel" id="mobile" name="mobile" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        <small></small><br>
+
+        <b>Address:</b><br />
+        <textarea id="address" name="address" rows="4" cols="50"></textarea><br>
+        <button style="color: white; background-color: green;" type="submit">Submit</button>
+        <button style="color: white; background-color: red;" type="reset">Reset</button>
+    </form>
+</body>
+</html>
