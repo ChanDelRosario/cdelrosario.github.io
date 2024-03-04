@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script language="javascript" type="text/javascript">
+        function calculate() {
+            var first = parseInt(document.getElementById("first").value);
+            var second = parseInt(document.getElementById("second").value);
+            var total = first + second;
+            document.getElementById("sum").innerHTML = total;
+        }
+        
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 50px;
+            border: 1px solid white;
+            padding: 1px;
+            margin: 10px;
+            }
+        p{
+            text-align: center;
+        }
+        body{
+            background-color: black;
+            color: white;
+        }
+        input{
+            padding: 1px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>                  
+    <h1>Enter two Number Calculator</h1> 
+    <hr>
+    
+    
+    First Number:<br> <input type="number1" id="first"><br>
+    Second Number:<br> <input type="number2" id="second"><br>
+
+    Total Sum: 
+    <div class="box">
+        <p id="sum"></p>
+    </div>
+    <input type="button" onclick="calculate()" value="Calculate Sum">
+
+</body>
+</html>
